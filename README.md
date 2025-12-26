@@ -3,7 +3,7 @@
 Tona is a browser extension that provides AI-powered conversation analysis and personalized response suggestions. The extension extracts messages from active chats and sends them to two backend servers: an AI Assistant Server for real-time response suggestions and conversation advice, and a Statistics & Insights Server for metrics like energy balance, engagement levels, response patterns, conversation topics, and communication style insights. The extension displays a modal with three tabs—AI Assistant for interactive conversation help, Statistics for quantitative metrics, and Insights for personalized communication tips.
 
 The system uses advanced prompt engineering to analyze communication patterns. It provides context-aware responses that match the user's natural communication in real-time.
-This is a demo version and is currently being expanded into a sales communication tool for businesses.
+This is a demo version showcased to work soley for Whatsapp Web. The system is currently being expanded into a sales communication tool for businesses which is functional for any web app.
 
 ---
 
@@ -22,7 +22,7 @@ This is a demo version and is currently being expanded into a sales communicatio
 The project consists of three main components:
 
 **Browser Extension** (`content.js`, `popup.js`, etc.)
-   - Extracts chat messages from WhatsApp Web
+   - Extracts chat messages from a web app
    - Provides the user interface with Statistics and Insights tabs
    - Communicates with both AI Assistant and Statistics servers
 
@@ -32,7 +32,7 @@ The project consists of three main components:
    - Provides response suggestions and basic analysis
 
 **Statistics & Insights Server** (`server/stats_server.py`)
-   - Dedicated server for comprehensive statistics generation
+   - Dedicated server for statistics generation
    - LLM-powered analysis of conversation dynamics, patterns, and topics
    - Generates communication style insights and conversation tips
    - Provides detailed metrics for the Statistics and Insights dashboard tabs
