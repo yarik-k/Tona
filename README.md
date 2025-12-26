@@ -1,28 +1,17 @@
-# Tona - WhatsApp Conversation Assistant
+# Tona
 
-Tona is a browser extension that provides AI-powered conversation analysis and suggestions for WhatsApp Web. It helps users improve their communication by analyzing chat patterns and providing personalized response suggestions.
+Tona is a browser extension that provides AI-powered conversation analysis and personalized response suggestions. The extension extracts messages from active chats and sends them to two backend servers: an AI Assistant Server for real-time response suggestions and conversation advice, and a Statistics & Insights Server for metrics like energy balance, engagement levels, response patterns, conversation topics, and communication style insights. The extension displays a modal with three tabs—AI Assistant for interactive conversation help, Statistics for quantitative metrics, and Insights for personalized communication tips.
 
-## Features
+The system uses advanced prompt engineering to analyze communication patterns. It provides context-aware responses that match the user's natural communication in real-time.
+This is a demo version and is currently being expanded into a sales communication tool for businesses.
 
-### 🤖 AI-Powered Analysis
-- **Real-time Chat Analysis**: Analyzes your WhatsApp conversations in real-time
-- **Personalized Suggestions**: Adapts response suggestions to match your communication style
-- **Tone Analysis**: Understands your formality level, response length, and emoji usage
-- **Memory Management**: Remembers your conversation patterns and preferences
+---
 
-### 📊 Comprehensive Statistics & Insights
-- **Conversation Dynamics**: Energy balance and engagement level analysis
-- **Response Patterns**: Average response time, words per message, question rate, emoji usage
-- **Conversation Topics**: Automatic topic detection with percentage distribution
-- **Communication Style**: Detailed analysis of their messaging patterns and tone
-- **Conversation Tips**: Personalized actionable advice for better communication
-- **Beautiful Loading Animations**: Elegant loading states for Statistics and Insights tabs
+## Screenshots
 
-### 💡 Smart Suggestions
-- **Context-Aware Responses**: Suggestions based on the current conversation
-- **Style Matching**: Responses that match your natural communication style
-- **Copy-to-Clipboard**: One-click copying of suggested responses
-- **Multiple Options**: Various response styles for different situations
+
+
+---
 
 ## Architecture
 
@@ -35,7 +24,6 @@ The project consists of three main components:
 
 2. **AI Assistant Server** (`server/main.py` - Port 8000)
    - FastAPI-based backend for conversation analysis
-   - OpenAI integration for AI suggestions
    - Memory management with Redis
    - Provides response suggestions and basic analysis
 
