@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Tona",
+  "version": "1.0.0",
+  "description": "Analyze chat messages for tone, style, and meaning to provide conversation advice",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://web.whatsapp.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["config.js", "content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tona - Chat Analysis"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+} 
